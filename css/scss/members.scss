@@ -1,0 +1,67 @@
+.team-members {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../assets/bg.png");
+        background-repeat: repeat;
+        opacity: .3;
+    }
+
+    .container {
+        h1 {
+            color: $mainFontColor;
+            letter-spacing: 5px;
+            font-size: 3.75rem;
+            font-weight: 600;
+        }
+
+        .team-member-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .team-member-card {
+                display: flex;
+                flex-direction: column;
+                display: -webkit-flex;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                align-items: center;
+                overflow: hidden;
+                a:hover {
+                    text-decoration: none;
+                }
+
+                .team-member-picture {
+                    position: relative;
+                    width: 100%;
+                }
+                .mail-icon {
+                    background-image: url("../assets/mail.png");
+                    background-size: cover;
+                    width: 100%;
+                }
+                .team-member-picture {
+                    width: 100%;
+                }
+                .team-member-name {
+                    font-size: 1.13em;
+                    color: $mainFontColor;
+                    // font-weight: 600;
+                    margin-top: 30px;
+                }
+
+                .team-member-job {
+                    color: $altFontColor;
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+}

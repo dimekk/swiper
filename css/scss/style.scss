@@ -1,0 +1,106 @@
+@import './variables.scss';
+@import './members.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap');
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+
+            .swiper-container-v {
+                //background: #eee;
+            }
+
+            .swiper-container-h {
+                background-image: url("./../assets/slidebg.png");
+                //background-size: cover;
+                background-repeat: no-repeat;
+                filter: contrast(150%);
+                filter: saturate(90%);
+
+                .member-slide {
+                    background-color: transparent;
+
+                    .team-member-box {
+                        border: 5px dashed rgba(255, 255, 255, 0.2);
+                        display: flex;
+                        flex-direction: column;
+                        padding: 50px;
+                        text-shadow: 1px 1px 2px #000;
+
+                        color: #fff;
+
+                        h1 {
+                            font-size: 60pt;
+                            font-weight: 700;
+                        }
+
+                        h2 {
+                            font-size: 40pt;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                #return-cross {
+                    position: absolute;
+                    right: 32px;
+                    top: 32px;
+                    width: 32px;
+                    height: 32px;
+                    cursor: pointer;
+                    z-index: 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        right: 25px;
+                        content: " ";
+                        height: 55px;
+                        width: 15px;
+                        border-radius: 5px;
+                        background-color: #fff;
+                    }
+
+                    &::before {
+                        transform: rotate(45deg);
+                    }
+
+                    &::after {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap");
+.team-members {
+  position: relative;
+}
+.team-members::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("../assets/bg.png");
+  background-repeat: repeat;
+  opacity: 0.3;
+}
+.team-members .container h1 {
+  color: #452e76;
+  letter-spacing: 5px;
+  font-size: 3.75rem;
+  font-weight: 600;
+}
+.team-members .container .team-member-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-members .container .team-member-row .team-member-card {
+  display: flex;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.team-members .container .team-member-row .team-member-card a:hover {
+  text-decoration: none;
+}
+.team-members .container .team-member-row .team-member-card .team-member-picture {
+  position: relative;
+  width: 100%;
+}
+.team-members .container .team-member-row .team-member-card .mail-icon {
+  background-image: url("../assets/mail.png");
+  background-size: cover;
+  width: 100%;
+}
+.team-members .container .team-member-row .team-member-card .team-member-picture {
+  width: 100%;
+}
+.team-members .container .team-member-row .team-member-card .team-member-name {
+  font-size: 1.13em;
+  color: #452e76;
+  margin-top: 30px;
+}
+.team-members .container .team-member-row .team-member-card .team-member-job {
+  color: #48c3dc;
+  margin-bottom: 6px;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+body .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+body .swiper-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+body .swiper-container .swiper-slide .swiper-container-h {
+  background-image: url("./../assets/slidebg.png");
+  background-repeat: no-repeat;
+  filter: contrast(150%);
+  filter: saturate(90%);
+}
+body .swiper-container .swiper-slide .swiper-container-h .member-slide {
+  background-color: transparent;
+}
+body .swiper-container .swiper-slide .swiper-container-h .member-slide .team-member-box {
+  border: 5px dashed rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  text-shadow: 1px 1px 2px #000;
+  color: #fff;
+}
+body .swiper-container .swiper-slide .swiper-container-h .member-slide .team-member-box h1 {
+  font-size: 60pt;
+  font-weight: 700;
+}
+body .swiper-container .swiper-slide .swiper-container-h .member-slide .team-member-box h2 {
+  font-size: 40pt;
+  font-weight: 300;
+}
+body .swiper-container .swiper-slide .swiper-container-h #return-cross {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 100000000000000060000000000000000000000000000000000000000000000000000000000000000000000000000000000000000;
+}
+body .swiper-container .swiper-slide .swiper-container-h #return-cross::before, body .swiper-container .swiper-slide .swiper-container-h #return-cross::after {
+  position: absolute;
+  right: 25px;
+  content: " ";
+  height: 55px;
+  width: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+body .swiper-container .swiper-slide .swiper-container-h #return-cross::before {
+  transform: rotate(45deg);
+}
+body .swiper-container .swiper-slide .swiper-container-h #return-cross::after {
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=style.css.map */

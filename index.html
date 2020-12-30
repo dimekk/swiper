@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>IndaHash Slider</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/people.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    </head>
+
+    <body>
+        <div class="swiper-container swiper-container-h">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="swiper-slide">
+                        <div class="swiper-container swiper-container-h">
+                            <div class="swiper-wrapper">
+                                <div id="team" class="swiper-slide team-members">
+                                    <div class="container">
+                                        <h1>Meet our team</h1>
+                                        <div class="row team-member-row">
+                                            <div id="bs" class="col-md-2 team-member-card">
+                                                <a href="#slidebs">
+                                                    <img class="float-img mail-icon">
+                                                    <img class="float-img team-member-picture"
+                                                        src="./assets/team_members/1.png">
+                                                    <p class="team-member-name">Basia Sołtysińska</p>
+                                                    <p class="team-member-job">Founder</p>
+                                                    <span class="team-member-loc">Warsaw</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2 team-member-card">
+                                                <a href="#slidewc">
+                                                    <img class="float-img mail-icon">
+                                                    <img class="float-img team-member-picture"
+                                                        src="./assets/team_members/2.png">
+                                                    <p class="team-member-name">Włas Chorowiec</p>
+                                                    <p class="team-member-job">Founder</p>
+                                                    <span class="team-member-loc">Warsaw</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2 team-member-card">
+                                                <a href="#">
+                                                    <img class="float-img mail-icon">
+                                                    <img class="float-img team-member-picture"
+                                                        src="./assets/team_members/3.png">
+                                                    <p class="team-member-name">Basia Sołtysińska</p>
+                                                    <p class="team-member-job">Founder</p>
+                                                    <span class="team-member-loc">Warsaw</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2 team-member-card">
+                                                <a href="#">
+                                                    <img class="float-img mail-icon">
+                                                    <img class="float-img team-member-picture"
+                                                        src="./assets/team_members/4.png">
+                                                    <p class="team-member-name">Basia Sołtysińska</p>
+                                                    <p class="team-member-job">Founder</p>
+                                                    <span class="team-member-loc">Warsaw</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-md-2 team-member-card">
+                                                <a href="#">
+                                                    <img class="float-img mail-icon">
+                                                    <img class="float-img team-member-picture"
+                                                        src="./assets/team_members/5.png">
+                                                    <p class="team-member-name">Basia Sołtysińska</p>
+                                                    <p class="team-member-job">Founder</p>
+                                                    <span class="team-member-loc">Warsaw</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2 team-member-card">1</div>
+                                            <div class="col-md-2 team-member-card">2</div>
+                                            <div class="col-md-2 team-member-card">3</div>
+                                            <div class="col-md-2 team-member-card">4</div>
+                                            <div class="col-md-2 team-member-card">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div id="slidebs" class="swiper-slide member-slide">
+                                        <div class="container">
+                                            <div class="row team-member-slide">
+                                                <div class="col-md-12 team-member-box">
+                                                    <h2 class="team-member-job">Founder</h2>
+                                                    <h1 class="team-member-name">Basia Sołtysińska</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="slidewc" class="swiper-slide member-slide">
+                                        <div class="container">
+                                            <div class="row team-member-slide">
+                                                <div class="col-md-12 team-member-box">
+                                                    <h2 class="team-member-job">Founder</h2>
+                                                    <h1 class="team-member-name">Włas Chorowiec</h1>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next swiper-button-white"></div>
+                                <div class="swiper-button-prev swiper-button-white"></div>
+                                <a href="#team" id="return-cross"></a>
+                                <div class="swiper-slide">
+                                    <div class="swiper-container swiper-container-h">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
